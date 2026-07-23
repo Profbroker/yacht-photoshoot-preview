@@ -111,6 +111,7 @@
   /* why yacht split */
   #ps-root .ps-split { display:grid; grid-template-columns:1.05fr 0.95fr; gap:64px; align-items:center; }
   #ps-root .ps-split__media { align-self:stretch; min-height:460px; background-position:center; background-size:cover; filter:saturate(0.82) sepia(0.12); }
+  #ps-root .ps-split__media--bw { filter:grayscale(1); background-position:center top; }
 
   /* included */
   #ps-root .ps-incl { display:grid; grid-template-columns:1fr 1fr; gap:64px; }
@@ -294,7 +295,7 @@
 <section class="ps-sec ps-sec--cream2" id="ps-photographer">
   <div class="ps-inner">
     <div class="ps-split">
-      <div class="ps-split__media" style="background-image:url('https://cdn.jsdelivr.net/gh/Profbroker/y-az-publish@main/assets/ps-samir-work.webp')" role="img" aria-label="Портрет на парусной яхте — работа фотографа Samir Abbasli"></div>
+      <div class="ps-split__media ps-split__media--bw" style="background-image:url('https://cdn.jsdelivr.net/gh/Profbroker/y-az-publish@main/assets/ps-samir.webp')" role="img" aria-label="Фотограф Samir Abbasli — портрет с камерой"></div>
       <div>
         <div class="ps-head" style="margin-bottom:24px">
           <div class="ps-head__eyebrow">Наш фотограф</div>
