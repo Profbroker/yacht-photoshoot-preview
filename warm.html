@@ -122,14 +122,6 @@
   #ps-root .ps-incl__mark { width:24px; height:24px; border:1px solid var(--brass); color:var(--brass-deep); display:inline-flex; align-items:center; justify-content:center; font-size:13px; flex:0 0 24px; }
   #ps-root .ps-incl__mark--opt { border-color:var(--ink-muted); color:var(--ink-muted); }
 
-  /* steps timeline */
-  #ps-root .ps-steps { display:grid; grid-template-columns:repeat(4,1fr); border:1px solid var(--rule); background:var(--cream-2); }
-  #ps-root .ps-step { padding:28px 24px; border-right:1px solid var(--rule); display:flex; flex-direction:column; gap:12px; }
-  #ps-root .ps-step:last-child { border-right:none; }
-  #ps-root .ps-step__n { font-family:'Montserrat',sans-serif; font-size:12px; letter-spacing:0.22em; text-transform:uppercase; color:var(--brass-deep); font-weight:600; }
-  #ps-root .ps-step h3 { font-size:20px; font-weight:700; }
-  #ps-root .ps-step p { font-size:13px; color:var(--ink-soft); line-height:1.5; }
-
   /* faq */
   #ps-root .ps-faq { max-width:900px; margin:0 auto; }
   #ps-root .ps-faq__item { border-bottom:1px solid var(--rule); }
@@ -156,13 +148,9 @@
     #ps-root .ps-split { grid-template-columns:1fr; gap:32px; }
     #ps-root .ps-split__media { min-height:420px; }
     #ps-root .ps-incl { grid-template-columns:1fr; gap:40px; }
-    #ps-root .ps-steps { grid-template-columns:1fr 1fr; }
-    #ps-root .ps-step:nth-child(2){border-right:none;} #ps-root .ps-step:nth-child(-n+2){border-bottom:1px solid var(--rule);}
   }
   @media (max-width:640px) {
     #ps-root .ps-formats { grid-template-columns:1fr; }
-    #ps-root .ps-steps { grid-template-columns:1fr; }
-    #ps-root .ps-step { border-right:none; border-bottom:1px solid var(--rule); }
     #ps-root .ps-gal { grid-auto-rows:160px; }
     #ps-root .ps-hero__cta { flex-direction:column; } #ps-root .ps-hero__cta .ps-btn { width:100%; justify-content:center; }
   }
@@ -312,24 +300,8 @@
   </div>
 </section>
 
-<!-- STEPS -->
-<section class="ps-sec" id="ps-how">
-  <div class="ps-inner">
-    <div class="ps-head">
-      <div class="ps-head__eyebrow">Как проходит</div>
-      <h2>Съёмка в <em>четыре шага</em></h2>
-    </div>
-    <div class="ps-steps">
-      <div class="ps-step"><div class="ps-step__n">Шаг 1</div><h3>Заявка</h3><p>Расскажите про формат, дату и пожелания — подскажем, как лучше.</p></div>
-      <div class="ps-step"><div class="ps-step__n">Шаг 2</div><h3>Время</h3><p>Выбираем час съёмки — чаще всего закат, лучший свет на воде.</p></div>
-      <div class="ps-step"><div class="ps-step__n">Шаг 3</div><h3>Съёмка</h3><p>Выходим в бухту, снимаем на борту и на фоне Баку, в движении и на якоре.</p></div>
-      <div class="ps-step"><div class="ps-step__n">Шаг 4</div><h3>Кадры</h3><p>Получаете фото — если снимали с нашим фотографом.</p></div>
-    </div>
-  </div>
-</section>
-
 <!-- PREPARATION (prose) -->
-<section class="ps-sec ps-sec--cream2" id="ps-prep">
+<section class="ps-sec" id="ps-prep">
   <div class="ps-inner">
     <div class="ps-head">
       <div class="ps-head__eyebrow">Советы</div>
@@ -343,7 +315,7 @@
 </section>
 
 <!-- FAQ -->
-<section class="ps-sec" id="ps-faq">
+<section class="ps-sec ps-sec--cream2" id="ps-faq">
   <div class="ps-inner">
     <div class="ps-head"><div class="ps-head__eyebrow">Вопросы</div><h2>Частые <em>вопросы</em></h2></div>
     <div class="ps-faq">
