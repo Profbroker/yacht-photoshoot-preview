@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Фотосессия на яхте в Баку — превью (тёплая версия)</title>
+<style>body{margin:0}</style>
+</head>
+<body>
+<!--
+  tilda-photoshoot-warm.html
+  Лендинг «Фотосессия на яхте в Баку» — ТЁПЛАЯ версия (дизайн дизайнера) + наш SEO-костяк.
+  Вставлять ИНЛАЙН в Tilda (HTML-блок T123). Header/footer сайта даёт Tilda — тут только контент.
+
+  SEO (приоритет над дизайном):
+   - keyword H1 «Фотосессия на яхте в Баку» (эмоц. строка — в подзаголовок)
+   - проза-носители позиций: «Локация» + «Как подготовиться» (не буллеты)
+   - «Золотой час» прозой; FAQ 7 вопросов; JSON-LD Service/FAQPage/BreadcrumbList
+   - «Каспий» не используем
+  Стили scoped под #ps-root (не течёт в Tilda). Картинки — CDN (jsDelivr, y-az-publish).
+  Title/description — в настройках страницы Tilda. 301 со старого /ru/blog/... на новый URL.
+-->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+<div id="ps-root">
+<style>
+  #ps-root {
+    --navy:#0E375E; --navy-deep:#081C32; --ink:#23201A;
+    --brass:#B89A5F; --brass-soft:#D4B97A; --brass-deep:#8A7340;
+    --cream:#F7F1E6; --cream-2:#FBF6EE; --sand:#EFE6D4; --rule:#E5DAC4;
+    --ink-soft:#55503F; --ink-muted:#8A8271;
+    --on-dark-soft:rgba(255,255,255,0.86); --on-dark-muted:rgba(255,255,255,0.62);
+    --pad-x:clamp(20px,5vw,72px);
+    font-family:'Roboto',-apple-system,sans-serif; background:var(--cream); color:var(--ink);
+    -webkit-font-smoothing:antialiased; font-size:16px; line-height:1.6;
+  }
+  #ps-root *, #ps-root *::before, #ps-root *::after { box-sizing:border-box; }
+  #ps-root img { display:block; max-width:100%; }
+  #ps-root a { color:inherit; text-decoration:none; }
+  #ps-root h1, #ps-root h2, #ps-root h3, #ps-root h4 { font-family:'Montserrat',sans-serif; margin:0; letter-spacing:-0.02em; }
+  #ps-root p { margin:0; }
+
+  /* hero */
+  #ps-root .ps-hero { position:relative; min-height:90vh; display:flex; flex-direction:column; overflow:hidden; background:var(--navy-deep); color:#fff; isolation:isolate; }
+  #ps-root .ps-hero__bg { position:absolute; inset:0; background:url('https://cdn.jsdelivr.net/gh/Profbroker/y-az-publish@main/assets/photoshoot-hero.webp') center/cover; animation:ps-kb 30s ease-in-out infinite alternate; filter:saturate(0.95) brightness(0.94); }
+  @keyframes ps-kb { 0%{transform:scale(1.03) translate(0,0)} 100%{transform:scale(1.12) translate(1%,-2%)} }
+  @media (prefers-reduced-motion:reduce){ #ps-root .ps-hero__bg{animation:none;transform:scale(1.03)} }
+  #ps-root .ps-hero__scrim { position:absolute; inset:0; background:linear-gradient(to top, rgba(35,20,10,0.74) 0%, rgba(35,20,10,0.14) 45%, rgba(35,20,10,0.38) 100%); z-index:1; }
+  #ps-root .ps-hero__inner { position:relative; z-index:2; flex:1; display:flex; flex-direction:column; justify-content:flex-end; max-width:1320px; width:100%; margin:0 auto; padding:0 var(--pad-x) clamp(48px,7vh,88px); }
+  #ps-root .ps-eyebrow { display:inline-flex; align-items:center; gap:14px; font-size:11px; letter-spacing:0.24em; text-transform:uppercase; color:var(--brass-soft); margin-bottom:24px; }
+  #ps-root .ps-eyebrow::before { content:''; width:40px; height:1px; background:var(--brass-soft); }
+  #ps-root .ps-hero h1 { font-weight:700; font-size:clamp(38px,5.6vw,76px); line-height:1.02; text-wrap:balance; }
+  #ps-root .ps-hero h1 em { font-style:italic; font-weight:400; color:var(--brass-soft); }
+  #ps-root .ps-hero__sub { margin-top:22px; font-size:clamp(16px,1.4vw,19px); max-width:560px; color:var(--on-dark-soft); font-weight:300; }
+  #ps-root .ps-hero__cta { margin-top:34px; display:flex; gap:12px; flex-wrap:wrap; }
+
+  /* buttons */
+  #ps-root .ps-btn { display:inline-flex; align-items:center; gap:10px; padding:16px 28px; font-size:12px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; border:1px solid transparent; transition:all .2s; cursor:pointer; }
+  #ps-root .ps-btn--gold { background:var(--brass); color:var(--navy-deep); border-color:var(--brass); }
+  #ps-root .ps-btn--gold:hover { background:var(--brass-soft); transform:translateY(-1px); }
+  #ps-root .ps-btn--ghost { background:rgba(255,255,255,0.06); color:#fff; border-color:rgba(255,255,255,0.5); }
+  #ps-root .ps-btn--ghost:hover { border-color:#fff; }
+
+  /* section shell */
+  #ps-root .ps-sec { padding:clamp(64px,9vh,120px) var(--pad-x); }
+  #ps-root .ps-sec--cream2 { background:var(--cream-2); }
+  #ps-root .ps-sec--sand { background:var(--sand); }
+  #ps-root .ps-inner { max-width:1320px; margin:0 auto; }
+  #ps-root .ps-head { margin-bottom:clamp(36px,5vh,56px); }
+  #ps-root .ps-head__eyebrow { font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:var(--brass-deep); margin-bottom:14px; }
+  #ps-root .ps-head h2 { font-weight:700; font-size:clamp(28px,3.4vw,44px); line-height:1.08; text-wrap:balance; }
+  #ps-root .ps-head h2 em { font-style:italic; font-weight:400; color:var(--brass-deep); }
+  #ps-root .ps-head__lede { margin-top:18px; font-size:17px; color:var(--ink-soft); max-width:640px; }
+
+  /* prose (SEO) */
+  #ps-root .ps-prose { max-width:720px; }
+  #ps-root .ps-prose p { font-size:17px; line-height:1.7; color:var(--ink-soft); margin:0 0 18px; }
+  #ps-root .ps-prose p:last-child { margin-bottom:0; }
+
+  /* gallery mosaic */
+  #ps-root .ps-gal { display:grid; grid-template-columns:repeat(4,1fr); grid-auto-rows:220px; gap:12px; }
+  #ps-root .ps-gal__cell { position:relative; overflow:hidden; background:var(--sand); }
+  #ps-root .ps-gal__cell img { width:100%; height:100%; object-fit:cover; filter:saturate(0.82) sepia(0.12) brightness(0.98); transition:transform .6s; }
+  #ps-root .ps-gal__cell:hover img { transform:scale(1.05); }
+  #ps-root .ps-gal .span2c { grid-column:span 2; }
+  #ps-root .ps-gal .span2r { grid-row:span 2; }
+
+  /* formats */
+  #ps-root .ps-formats { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  #ps-root .ps-fmt { background:var(--cream-2); border:1px solid var(--rule); display:flex; flex-direction:column; transition:transform .2s, border-color .2s; }
+  #ps-root .ps-fmt:hover { transform:translateY(-3px); border-color:var(--brass); }
+  #ps-root .ps-fmt__ph { position:relative; aspect-ratio:3/4; overflow:hidden; background:var(--sand); }
+  #ps-root .ps-fmt__ph img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; filter:saturate(0.82) sepia(0.12) brightness(0.98); transition:transform .5s; }
+  #ps-root .ps-fmt:hover .ps-fmt__ph img { transform:scale(1.04); }
+  #ps-root .ps-fmt__pill { position:absolute; top:14px; left:14px; z-index:2; background:var(--ink); color:var(--cream); font-size:10px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; padding:5px 10px; }
+  #ps-root .ps-fmt__body { padding:24px; display:flex; flex-direction:column; gap:10px; flex:1; }
+  #ps-root .ps-fmt__body h3 { font-size:22px; font-weight:700; }
+  #ps-root .ps-fmt__body p { font-size:14px; color:var(--ink-soft); line-height:1.55; flex:1; }
+
+  /* golden hour full bleed */
+  #ps-root .ps-golden { position:relative; min-height:620px; display:flex; align-items:center; overflow:hidden; isolation:isolate; color:#fff; }
+  #ps-root .ps-golden__bg { position:absolute; inset:0; background:url('https://cdn.jsdelivr.net/gh/Profbroker/y-az-publish@main/assets/ps-golden.webp') center/cover; filter:saturate(1.05) brightness(0.8) sepia(0.12); z-index:0; }
+  #ps-root .ps-golden__scrim { position:absolute; inset:0; background:linear-gradient(to right, rgba(35,20,10,0.78), rgba(35,20,10,0.28)); z-index:1; }
+  #ps-root .ps-golden__inner { position:relative; z-index:2; max-width:1320px; margin:0 auto; padding:0 var(--pad-x); width:100%; }
+  #ps-root .ps-golden__box { max-width:640px; }
+  #ps-root .ps-golden h2 { font-weight:700; font-size:clamp(30px,4vw,52px); line-height:1.05; text-wrap:balance; }
+  #ps-root .ps-golden h2 em { font-style:italic; font-weight:400; color:var(--brass-soft); }
+  #ps-root .ps-golden .ps-prose p { color:var(--on-dark-soft); }
+  #ps-root .ps-golden .ps-prose { margin-top:20px; }
+
+  /* why yacht split */
+  #ps-root .ps-split { display:grid; grid-template-columns:1.05fr 0.95fr; gap:64px; align-items:center; }
+  #ps-root .ps-split__media { align-self:stretch; min-height:460px; background-position:center; background-size:cover; filter:saturate(0.82) sepia(0.12); }
+
+  /* included */
+  #ps-root .ps-incl { display:grid; grid-template-columns:1fr 1fr; gap:64px; }
+  #ps-root .ps-incl__col-title { font-size:13px; letter-spacing:0.2em; text-transform:uppercase; font-weight:600; padding-bottom:16px; border-bottom:1px solid var(--rule); margin-bottom:4px; }
+  #ps-root .ps-incl__in { color:var(--brass-deep); }
+  #ps-root .ps-incl__opt { color:var(--ink-muted); }
+  #ps-root .ps-incl__row { display:flex; align-items:center; gap:16px; padding:16px 0; border-bottom:1px solid var(--rule); font-size:16px; }
+  #ps-root .ps-incl__mark { width:24px; height:24px; border:1px solid var(--brass); color:var(--brass-deep); display:inline-flex; align-items:center; justify-content:center; font-size:13px; flex:0 0 24px; }
+  #ps-root .ps-incl__mark--opt { border-color:var(--ink-muted); color:var(--ink-muted); }
+
+  /* steps timeline */
+  #ps-root .ps-steps { display:grid; grid-template-columns:repeat(4,1fr); border:1px solid var(--rule); background:var(--cream-2); }
+  #ps-root .ps-step { padding:28px 24px; border-right:1px solid var(--rule); display:flex; flex-direction:column; gap:12px; }
+  #ps-root .ps-step:last-child { border-right:none; }
+  #ps-root .ps-step__n { font-family:'Montserrat',sans-serif; font-size:12px; letter-spacing:0.22em; text-transform:uppercase; color:var(--brass-deep); font-weight:600; }
+  #ps-root .ps-step h3 { font-size:20px; font-weight:700; }
+  #ps-root .ps-step p { font-size:13px; color:var(--ink-soft); line-height:1.5; }
+
+  /* faq */
+  #ps-root .ps-faq { max-width:900px; margin:0 auto; }
+  #ps-root .ps-faq__item { border-bottom:1px solid var(--rule); }
+  #ps-root .ps-faq__item:first-child { border-top:1px solid var(--rule); }
+  #ps-root .ps-faq__q { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:22px 0; font-family:'Montserrat',sans-serif; font-weight:500; font-size:17px; cursor:pointer; list-style:none; }
+  #ps-root .ps-faq__q::-webkit-details-marker { display:none; }
+  #ps-root .ps-faq__icon { width:26px; height:26px; border:1px solid var(--rule); display:inline-flex; align-items:center; justify-content:center; font-size:15px; color:var(--brass-deep); flex:0 0 26px; transition:transform .25s; }
+  #ps-root .ps-faq__item[open] .ps-faq__icon { transform:rotate(45deg); }
+  #ps-root .ps-faq__a { font-size:15px; color:var(--ink-soft); line-height:1.6; padding:0 0 22px; max-width:760px; }
+
+  /* final cta */
+  #ps-root .ps-final { position:relative; padding:clamp(72px,12vh,140px) var(--pad-x); color:#fff; text-align:center; overflow:hidden; isolation:isolate; }
+  #ps-root .ps-final__bg { position:absolute; inset:0; background:url('https://cdn.jsdelivr.net/gh/Profbroker/y-az-publish@main/assets/ps-final.webp') center/cover; filter:brightness(0.5) sepia(0.2); z-index:0; }
+  #ps-root .ps-final__inner { position:relative; z-index:1; max-width:820px; margin:0 auto; }
+  #ps-root .ps-final .ps-eyebrow { justify-content:center; }
+  #ps-root .ps-final h2 { font-weight:700; font-size:clamp(32px,5vw,56px); line-height:1.05; text-wrap:balance; }
+  #ps-root .ps-final h2 em { font-style:italic; font-weight:400; color:var(--brass-soft); }
+  #ps-root .ps-final p { margin-top:18px; font-size:16px; color:var(--on-dark-soft); }
+  #ps-root .ps-final__cta { margin-top:36px; display:inline-flex; gap:12px; flex-wrap:wrap; justify-content:center; }
+
+  @media (max-width:1024px) {
+    #ps-root .ps-gal { grid-template-columns:repeat(2,1fr); }
+    #ps-root .ps-formats { grid-template-columns:1fr 1fr; }
+    #ps-root .ps-split { grid-template-columns:1fr; gap:32px; }
+    #ps-root .ps-split__media { min-height:420px; }
+    #ps-root .ps-incl { grid-template-columns:1fr; gap:40px; }
+    #ps-root .ps-steps { grid-template-columns:1fr 1fr; }
+    #ps-root .ps-step:nth-child(2){border-right:none;} #ps-root .ps-step:nth-child(-n+2){border-bottom:1px solid var(--rule);}
+  }
+  @media (max-width:640px) {
+    #ps-root .ps-formats { grid-template-columns:1fr; }
+    #ps-root .ps-steps { grid-template-columns:1fr; }
+    #ps-root .ps-step { border-right:none; border-bottom:1px solid var(--rule); }
+    #ps-root .ps-gal { grid-auto-rows:160px; }
+    #ps-root .ps-hero__cta { flex-direction:column; } #ps-root .ps-hero__cta .ps-btn { width:100%; justify-content:center; }
+  }
+</style>
+
+<!-- HERO -->
+<section class="ps-hero">
+  <div class="ps-hero__bg"></div>
+  <div class="ps-hero__scrim"></div>
+  <div class="ps-hero__inner">
+    <div class="ps-eyebrow">Фотосессия на яхте · Баку · Золотой час</div>
+    <h1>Фотосессия на яхте <em>в Баку</em></h1>
+    <p class="ps-hero__sub">Кадры, которые хочется распечатать. Съёмка на паруснике в Бакинской бухте: золотой час, ветер, город на горизонте. Свадьба, love-story, семья или бренд — подберём формат под вашу историю.</p>
+    <div class="ps-hero__cta">
+      <a href="https://wa.me/994502350235" data-wa class="ps-btn ps-btn--gold">Написать в WhatsApp</a>
+      <a href="#ps-gallery" class="ps-btn ps-btn--ghost">Смотреть кадры</a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="ps-sec" id="ps-gallery">
+  <div class="ps-inner">
+    <div class="ps-head">
+      <div class="ps-head__eyebrow">Портфолио</div>
+      <h2>Как это <em>выглядит</em></h2>
+      <p class="ps-head__lede">Реальные кадры фотосессий на наших яхтах в Баку — портрет, love-story и контент для бренда на воде.</p>
+    </div>
+    <div class="ps-gal">
+      <div class="ps-gal__cell span2c span2r"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Profbroker/y-az-publish@main/assets/ps-galbig.webp" alt="Фотосессия на яхте в Баку — мужчина на носу яхты, снято с воды"></div>
+      <div class="ps-gal__cell"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Profbroker/y-az-publish@main/assets/photoshoot-gallery-1.webp" alt="Портрет девушки в шляпе на фоне моря — фотосессия на яхте"></div>
+      <div class="ps-gal__cell"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Profbroker/y-az-publish@main/assets/photoshoot-gallery-4.webp" alt="Мужской портрет на яхте в Баку"></div>
+      <div class="ps-gal__cell"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Profbroker/y-az-publish@main/assets/photoshoot-gallery-3.webp" alt="Съёмка на яхте на фоне панорамы Баку"></div>
+      <div class="ps-gal__cell"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Profbroker/y-az-publish@main/assets/photoshoot-gallery-2.webp" alt="Фотосессия на парусной яхте — портрет у штурвала"></div>
+      <div class="ps-gal__cell span2c"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Profbroker/y-az-publish@main/assets/photoshoot-gallery-6b.webp" alt="Съёмка на моторной яхте в Баку — за штурвалом с капитаном"></div>
+      <div class="ps-gal__cell"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Profbroker/y-az-publish@main/assets/photoshoot-gallery-5b.webp" alt="Мужской портрет на корме моторной яхты в Баку"></div>
+      <div class="ps-gal__cell"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Profbroker/y-az-publish@main/assets/ps-gal7.webp" alt="Фотосессия на яхте в Баку — портрет модели на борту"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMATS -->
+<section class="ps-sec ps-sec--cream2" id="ps-formats">
+  <div class="ps-inner">
+    <div class="ps-head">
+      <div class="ps-head__eyebrow">Форматы съёмки</div>
+      <h2>Под вашу <em>историю</em></h2>
+      <p class="ps-head__lede">Каждый формат — со своим сценарием, светом и настроением. Не нашли свой — соберём индивидуально.</p>
+    </div>
+    <div class="ps-formats">
+      <article class="ps-fmt">
+        <div class="ps-fmt__ph"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Profbroker/y-az-publish@main/assets/ps-fmt-couple.webp" alt="Свадебная и love-story фотосессия на яхте в Баку"><span class="ps-fmt__pill">Для двоих</span></div>
+        <div class="ps-fmt__body"><h3>Романтика на воде</h3><p>Свадьба, love-story или предложение руки. Борт только ваш, город на закате, фотограф ловит момент — от тихой прогулки вдвоём до «да» с шампанским.</p></div>
+      </article>
+      <article class="ps-fmt">
+        <div class="ps-fmt__ph"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Profbroker/y-az-publish@main/assets/photoshoot-gallery-1.webp" alt="Индивидуальный портрет на яхте — фотосессия в Баку"><span class="ps-fmt__pill">Портрет</span></div>
+        <div class="ps-fmt__body"><h3>Индивидуальный портрет</h3><p>Личная съёмка, образ, портфолио. Час на воде — и десятки кадров, которых нет у других: мягкий свет, ветер и море в кадре.</p></div>
+      </article>
+      <article class="ps-fmt">
+        <div class="ps-fmt__ph"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/Profbroker/y-az-publish@main/assets/photoshoot-gallery-5b.webp" alt="Съёмка контента для бренда на яхте в Баку"><span class="ps-fmt__pill">Бренд</span></div>
+        <div class="ps-fmt__body"><h3>Съёмка для бренда</h3><p>Контент для соцсетей, каталога, рекламы. Яхта как премиальная локация для вашего продукта и имиджевых кадров.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WHY YACHT (prose) -->
+<section class="ps-sec" id="ps-why">
+  <div class="ps-inner">
+    <div class="ps-split">
+      <div>
+        <div class="ps-head" style="margin-bottom:24px">
+          <div class="ps-head__eyebrow">Почему на яхте</div>
+          <h2>Локация, которой<br><em>нет у других</em></h2>
+        </div>
+        <div class="ps-prose">
+          <p>Яхта — локация, которой нет ни у одной студии и ни у одной набережной Баку. Живой горизонт, движение воды, ветер в кадре и силуэт города на заднем плане: Flame Towers, набережная, Старый город. Каждый кадр фотосессии на яхте уникален — море, свет и ветер не повторяются дважды.</p>
+          <p>Пока яхта идёт по Бакинской бухте, фон меняется — от открытого моря до огней набережной, — и за одну съёмку вы получаете десятки разных сцен. Такой глубины и объёма кадра на берегу не добиться.</p>
+          <p>И это приватно: борт только ваш, без посторонних в кадре. Плюс естественная динамика, которую не сыграть в студии, — ветер в волосах, брызги и движение паруса.</p>
+        </div>
+      </div>
+      <div class="ps-split__media" style="background-image:url('https://cdn.jsdelivr.net/gh/Profbroker/y-az-publish@main/assets/photoshoot-gallery-3.webp')"></div>
+    </div>
+  </div>
+</section>
+
+<!-- GOLDEN HOUR -->
+<section class="ps-golden">
+  <div class="ps-golden__bg"></div>
+  <div class="ps-golden__scrim"></div>
+  <div class="ps-golden__inner">
+    <div class="ps-golden__box">
+      <div class="ps-eyebrow">Золотой час</div>
+      <h2>Свет, который нельзя<br><em>повторить</em> в студии</h2>
+      <div class="ps-prose">
+        <p>Лучшее время для фотосессии на яхте — золотой час, примерно за час до заката. Солнце ложится низко и мягко: вода Бакинской бухты становится золотой, лица — тёплыми, а город превращается в силуэт. Свет в это время без резких теней, а море работает как огромный отражатель.</p>
+        <p>Мы планируем съёмку именно под это окно и заранее прокладываем маршрут по бухте под нужный ракурс. Один час, который стоит всей прогулки.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INCLUDED -->
+<section class="ps-sec ps-sec--sand" id="ps-included">
+  <div class="ps-inner">
+    <div class="ps-head">
+      <div class="ps-head__eyebrow">Под ключ</div>
+      <h2>Что входит<br>и <em>что опционально</em></h2>
+    </div>
+    <div class="ps-incl">
+      <div>
+        <div class="ps-incl__col-title ps-incl__in">Входит в стоимость</div>
+        <div class="ps-incl__row"><span class="ps-incl__mark">✓</span>Яхта с капитаном на всё время съёмки</div>
+        <div class="ps-incl__row"><span class="ps-incl__mark">✓</span>Выход в золотой час по расписанию заката</div>
+        <div class="ps-incl__row"><span class="ps-incl__mark">✓</span>Маршрут по бухте с лучшими точками для кадров</div>
+        <div class="ps-incl__row"><span class="ps-incl__mark">✓</span>Спасжилеты и безопасность на борту</div>
+      </div>
+      <div>
+        <div class="ps-incl__col-title ps-incl__opt">Опционально</div>
+        <div class="ps-incl__row"><span class="ps-incl__mark ps-incl__mark--opt">+</span>Профессиональный фотограф — подберём под ваш стиль</div>
+        <div class="ps-incl__row"><span class="ps-incl__mark ps-incl__mark--opt">+</span>Визажист и стилист</div>
+        <div class="ps-incl__row"><span class="ps-incl__mark ps-incl__mark--opt">+</span>Цветы, шампанское, декор борта</div>
+        <div class="ps-incl__row"><span class="ps-incl__mark ps-incl__mark--opt">+</span>Видеосъёмка и аэросъёмка с дрона</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section class="ps-sec" id="ps-how">
+  <div class="ps-inner">
+    <div class="ps-head">
+      <div class="ps-head__eyebrow">Как проходит</div>
+      <h2>Съёмка в <em>четыре шага</em></h2>
+    </div>
+    <div class="ps-steps">
+      <div class="ps-step"><div class="ps-step__n">Шаг 1</div><h3>Заявка</h3><p>Расскажите про формат, дату и пожелания — подскажем, как лучше.</p></div>
+      <div class="ps-step"><div class="ps-step__n">Шаг 2</div><h3>Время</h3><p>Выбираем час съёмки — чаще всего закат, лучший свет на воде.</p></div>
+      <div class="ps-step"><div class="ps-step__n">Шаг 3</div><h3>Съёмка</h3><p>Выходим в бухту, снимаем на борту и на фоне Баку, в движении и на якоре.</p></div>
+      <div class="ps-step"><div class="ps-step__n">Шаг 4</div><h3>Кадры</h3><p>Получаете фото — если снимали с нашим фотографом.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PREPARATION (prose) -->
+<section class="ps-sec ps-sec--cream2" id="ps-prep">
+  <div class="ps-inner">
+    <div class="ps-head">
+      <div class="ps-head__eyebrow">Советы</div>
+      <h2>Как подготовиться<br>к <em>фотосессии на яхте</em></h2>
+    </div>
+    <div class="ps-prose">
+      <p>Несколько мелочей сделают съёмку комфортной и красивой. Возьмите сменную одежду — на воде прохладнее, чем на берегу, особенно ближе к закату. Лучше выбирать светлые, лёгкие, струящиеся ткани: они ловят ветер и красиво двигаются в кадре, в отличие от плотных и жёстких.</p>
+      <p>Обувь — на мягкой подошве или босиком: каблуки на палубе неудобны и небезопасны. Если снимаете со своим фотографом, предупредите заранее — подскажем лучшие точки на борту и выстроим маршрут под свет.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="ps-sec" id="ps-faq">
+  <div class="ps-inner">
+    <div class="ps-head"><div class="ps-head__eyebrow">Вопросы</div><h2>Частые <em>вопросы</em></h2></div>
+    <div class="ps-faq">
+      <details class="ps-faq__item" open><summary class="ps-faq__q">Сколько стоит фотосессия на яхте в Баку?<span class="ps-faq__icon">+</span></summary><div class="ps-faq__a">Стоимость зависит от формата, длительности и набора опций. Расскажите про вашу съёмку — соберём персональное предложение под запрос.</div></details>
+      <details class="ps-faq__item"><summary class="ps-faq__q">Можно со своим фотографом?<span class="ps-faq__icon">+</span></summary><div class="ps-faq__a">Да, конечно. Вы можете взять своего фотографа — мы предоставляем яхту, капитана и маршрут. Или подберём проверенного фотографа из наших партнёров.</div></details>
+      <details class="ps-faq__item"><summary class="ps-faq__q">Сколько длится съёмка?<span class="ps-faq__icon">+</span></summary><div class="ps-faq__a">Стандартный выход — 2 часа, включая дорогу к точкам съёмки и сам золотой час. Можно продлить по договорённости.</div></details>
+      <details class="ps-faq__item"><summary class="ps-faq__q">Что если погода испортится?<span class="ps-faq__icon">+</span></summary><div class="ps-faq__a">При сильном ветре выход переносим на другой день без потери предоплаты. Лёгкая облачность съёмке не мешает — наоборот, даёт мягкий свет.</div></details>
+      <details class="ps-faq__item"><summary class="ps-faq__q">Что надеть на съёмку на яхте?<span class="ps-faq__icon">+</span></summary><div class="ps-faq__a">Светлые, лёгкие, струящиеся ткани работают лучше всего — они ловят ветер и не спорят с морем. Обувь — мягкая подошва или босиком: каблуки на палубе неудобны и небезопасны. Возьмите сменную одежду.</div></details>
+      <details class="ps-faq__item"><summary class="ps-faq__q">Сколько человек можно взять?<span class="ps-faq__icon">+</span></summary><div class="ps-faq__a">До 8 гостей на борту в зависимости от яхты. Подходит и для пары, и для семьи с детьми — формат и судно подбираем под размер компании.</div></details>
+      <details class="ps-faq__item"><summary class="ps-faq__q">Во сколько приезжать?<span class="ps-faq__icon">+</span></summary><div class="ps-faq__a">Приезжайте за 30 минут до выхода. Золотой час короткий — важно быть на борту заранее, чтобы не потерять лучший свет.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="ps-final" id="ps-book">
+  <div class="ps-final__bg"></div>
+  <div class="ps-final__inner">
+    <div class="ps-eyebrow">Готовы к съёмке?</div>
+    <h2>Забронируйте <em>золотой час</em></h2>
+    <p>Напишите нам — подберём дату, формат и всё организуем. Отвечаем в течение часа.</p>
+    <div class="ps-final__cta">
+      <a href="https://wa.me/994502350235" data-wa class="ps-btn ps-btn--gold">Написать в WhatsApp</a>
+      <a href="tel:+994502350235" class="ps-btn ps-btn--ghost">+994 50 235 02 35</a>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- SEO: JSON-LD (Service + FAQPage + BreadcrumbList) -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"Service",
+      "name":"Фотосессия на яхте в Баку",
+      "serviceType":"Фотосессия на яхте",
+      "areaServed":{"@type":"City","name":"Баку"},
+      "provider":{"@type":"Organization","name":"yacht.az","url":"https://yacht.az/"},
+      "url":"https://yacht.az/ru/fotosessiya-na-yahte-baku"
+    },
+    {
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Главная","item":"https://yacht.az/ru/"},
+        {"@type":"ListItem","position":2,"name":"Фотосессия на яхте в Баку","item":"https://yacht.az/ru/fotosessiya-na-yahte-baku"}
+      ]
+    },
+    {
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"Сколько стоит фотосессия на яхте в Баку?","acceptedAnswer":{"@type":"Answer","text":"Стоимость зависит от формата, длительности и набора опций. Расскажите про вашу съёмку — соберём персональное предложение под запрос."}},
+        {"@type":"Question","name":"Можно со своим фотографом?","acceptedAnswer":{"@type":"Answer","text":"Да. Вы можете взять своего фотографа — мы предоставляем яхту, капитана и маршрут. Или подберём проверенного фотографа из наших партнёров."}},
+        {"@type":"Question","name":"Сколько длится съёмка?","acceptedAnswer":{"@type":"Answer","text":"Стандартный выход — 2 часа, включая дорогу к точкам съёмки и сам золотой час. Можно продлить по договорённости."}},
+        {"@type":"Question","name":"Что если погода испортится?","acceptedAnswer":{"@type":"Answer","text":"При сильном ветре выход переносим на другой день без потери предоплаты. Лёгкая облачность съёмке не мешает."}},
+        {"@type":"Question","name":"Что надеть на съёмку на яхте?","acceptedAnswer":{"@type":"Answer","text":"Светлые, лёгкие, струящиеся ткани и обувь на мягкой подошве или босиком. Возьмите сменную одежду — на воде прохладнее."}},
+        {"@type":"Question","name":"Сколько человек можно взять?","acceptedAnswer":{"@type":"Answer","text":"До 8 гостей на борту в зависимости от яхты. Подходит и для пары, и для семьи с детьми."}},
+        {"@type":"Question","name":"Во сколько приезжать?","acceptedAnswer":{"@type":"Answer","text":"Приезжайте за 30 минут до выхода. Золотой час короткий — важно быть на борту заранее."}}
+      ]
+    }
+  ]
+}
+</script>
+
+<script>
+(function(){
+  var t = encodeURIComponent('Здравствуйте! Хочу фотосессию на яхте в Баку.');
+  var root = document.getElementById('ps-root');
+  if(!root) return;
+  root.querySelectorAll('[data-wa]').forEach(function(a){
+    a.href = 'https://wa.me/994502350235?text=' + t;
+    a.target = '_blank'; a.rel = 'noopener';
+  });
+})();
+</script>
+
+</body>
+</html>
